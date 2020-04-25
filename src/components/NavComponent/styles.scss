@@ -1,0 +1,46 @@
+@import "../../scss/common.styles.scss";
+
+.navComponent {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 140px;
+    left: 0;
+    top: 0;
+    background: $hopkins-dark-blue;
+    color: $main-1;
+    .navIconMainContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background: $main-1;
+        .navIconMain {
+            width: 130px;
+            height: 80px;
+        }
+    }
+    .navContentContainer {
+        width: calc(100% - 140px);
+        height: 100%;
+        padding: 20px;
+        .navDetailsRow {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            span {
+                color: $emory-yellow;
+            }
+        }
+        .navLinks {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            font-size: $font-size-xxl;
+            list-style: none;
+        }
+    }
+}

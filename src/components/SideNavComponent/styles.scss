@@ -1,0 +1,13 @@
+@import "../../scss/common.styles.scss";
+
+.sideNavComponent {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    min-height: 100%;
+    padding: 20px;
+    background: $hopkins-light-blue;
+    color: $main-1;
+}
