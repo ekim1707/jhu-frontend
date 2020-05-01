@@ -5,7 +5,7 @@ import content from "./content";
 const HomeComponent = () => {
     return (
         <div className="homeComponent">
-            CONTENT GOES HERE
+            Welcome Home
         </div>
     );
 }

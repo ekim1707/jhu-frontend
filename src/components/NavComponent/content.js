@@ -13,5 +13,11 @@ export default {
             TITLE: `Current Subject(s)`,
             CONTENT: `Biochemistry`
         }
+    ],
+    NAV_LINKS: [
+        "HOME",
+        "SYLLABUS",
+        "CALENDAR",
+        "REMINDERS"
     ]
 };
