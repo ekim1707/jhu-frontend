@@ -11,6 +11,9 @@ body {
 a {
     text-decoration: none;
 }
+a:hover, button:hover, div[role=button] {
+    cursor: pointer;
+}
 
 ul {
     margin: 0;

@@ -3,12 +3,30 @@
 .sideNavComponent {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 140px;
     height: 100%;
-    padding: 20px;
     background: $hopkins-light-blue;
     color: $main-1;
     overflow: hidden;
+    .sideNavLinks {
+        padding: 5px;
+        background: $hopkins-dark-blue;
+        border-radius: 10px;
+        opacity: .3;
+        transition: opacity .75s;
+        .sideNavLinksIcons {
+            width: 100px;
+            height: 100px;
+            z-index: 100;
+        }
+    }
+    .sideNavLinks:hover {
+        opacity: 1;
+        transition: opacity .75s;
+    }
+    .sideNavLinks.active {
+        opacity: 1;
+    }
 }

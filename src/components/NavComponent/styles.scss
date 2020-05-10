@@ -42,10 +42,22 @@
             font-size: $font-size-xxl;
             list-style: none;
             .navLinks {
+                width: 200px;
+                padding: 25px;
+                background: $hopkins-light-blue;
                 color: $main-1;
+                border-radius: 10px;
+                font-weight: 700;
+                text-align: center;
+                opacity: .3;
+                transition: opacity .75s;
+            }
+            .navLinks:hover {
+                opacity: 1;
+                transition: opacity .75s;
             }
             .navLinks.active {
-                color: $hopkins-light-blue;
+                opacity: 1;
             }
         }
     }
