@@ -24,55 +24,55 @@ const JournalComponent = ({
                         className="inputField"
                         onChange={(e) => handleChange(e)}
                         value={title}
-                        placeholder={content.TITLE_LABEL}
                     />
+                    <label for="journalTitle">{content.TITLE_LABEL}</label>
                 </div>
                 <div className="detailsInputContainer">
                     <div className="inputContainer">
-                        <label for="journalTimestamp">{content.TIMESTAMP_LABEL}</label>
                         <Input 
                             id="journalTimestamp"
                             className="inputField"
                             onChange={(e) => handleChange(e)}
                             value={timestamp}
                         />
+                        <label for="journalTimestamp">{content.TIMESTAMP_LABEL}</label>
                     </div>
                     <div className="inputContainer">
-                        <label for="journalLocation">{content.LOCATION_LABEL}</label>
                         <Input 
                             id="journalLocation"
                             className="inputField"
                             onChange={(e) => handleChange(e)}
                             value={location}
                         />
+                        <label for="journalLocation">{content.LOCATION_LABEL}</label>
                     </div>
                     <div className="inputContainer">
-                        <label for="journalMood">{content.MOOD_LABEL}</label>
                         <Input 
                             id="journalMood"
                             className="inputField"
                             onChange={(e) => handleChange(e)}
                             value={mood}
                         />
+                        <label for="journalMood">{content.MOOD_LABEL}</label>
                     </div>
                     <div className="inputContainer">
-                        <label for="journalMusic">{content.MUSIC_LABEL}</label>
                         <Input 
                             id="journalMusic"
                             className="inputField"
                             onChange={(e) => handleChange(e)}
                             value={music}
                         />
+                        <label for="journalMusic">{content.MUSIC_LABEL}</label>
                     </div>
                 </div>
                 <div className="journalTextAreaContainer">
-                    <label for="journalTextArea">{content.ENTRY_LABEL}</label>
                     <TextArea 
                         id="journalTextArea"
                         rows="20"
                         className="textArea"
                         onChange={(e) => handleChange(e)}
                         value={entry}
+                        placeholder={content.ENTRY_LABEL}
                     />
                 </div>
             </div>

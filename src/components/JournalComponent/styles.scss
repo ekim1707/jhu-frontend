@@ -7,6 +7,7 @@
         text-align: center;
     }
     .journalFormContainer {
+        position: relative;
         padding: 20px;
         background: $main-1;
         border: 8px solid $hopkins-dark-blue;
@@ -14,34 +15,53 @@
         box-shadow: $shadow-medium;
         .inputField {
             display: flex;
-            flex-flow: column nowrap;
-            font-size: $font-size-l;
+            width: 100%;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            font-size: $font-size-medium;
             border-bottom: 2px solid $hopkins-dark-blue;
         }
-        .inputField::placeholder {
-            font-size: $font-size-medium;
+        label {
+            position: absolute;
+            top: 20px;
         }
-        #journalTitle {
-            width: 100%;
-            padding: 5px;
+        .inputField:focus {
+            border-color: $harvard-red;
+        }
+        .inputField:focus + label {
+            color: $harvard-red;
         }
         .detailsInputContainer {
+            position: relative;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
             margin-top: 20px;
-            .inputField {
-                margin-top: 10px;
-                font-size: $font-size-medium;
+            .inputContainer {
+                width: 20%;
+                label {
+                    top: 0;
+                }
             }
         }
         .journalTextAreaContainer {
-            margin-top: 20px;
-            border: 2px solid $hopkins-dark-blue;
-            border-radius: 5px;
-            .journalTextArea {
+            .textArea {
+                width: 100%;
+                margin-top: 20px;
+                padding: 20px;
                 font-size: $font-size-medium;
+                border: 2px solid $hopkins-dark-blue;
+                border-radius: 5px;
                 line-height: 1.5;
+            }
+            .textArea::placeholder {
+                font-size: $font-size-medium;
+            }
+            .textArea:focus {
+                border-color: $harvard-red;
+            }
+            .textArea:focus::placeholder {
+                color: $harvard-red;
             }
         }
     }
