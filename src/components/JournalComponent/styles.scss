@@ -1,1 +1,48 @@
 @import "../../scss/common.styles.scss";
+
+.journalComponent {
+    h1 {
+        margin-top: 0;
+        color: $hopkins-dark-blue;
+        text-align: center;
+    }
+    .journalFormContainer {
+        padding: 20px;
+        background: $main-1;
+        border: 8px solid $hopkins-dark-blue;
+        border-radius: 10px;
+        box-shadow: $shadow-medium;
+        .inputField {
+            display: flex;
+            flex-flow: column nowrap;
+            font-size: $font-size-l;
+            border-bottom: 2px solid $hopkins-dark-blue;
+        }
+        .inputField::placeholder {
+            font-size: $font-size-medium;
+        }
+        #journalTitle {
+            width: 100%;
+            padding: 5px;
+        }
+        .detailsInputContainer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+            .inputField {
+                margin-top: 10px;
+                font-size: $font-size-medium;
+            }
+        }
+        .journalTextAreaContainer {
+            margin-top: 20px;
+            border: 2px solid $hopkins-dark-blue;
+            border-radius: 5px;
+            .journalTextArea {
+                font-size: $font-size-medium;
+                line-height: 1.5;
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@ export default {
         },
         {
             TITLE: `Semester Count`,
-            CONTENT: `0`
+            CONTENT: `1`
         },
         {
             TITLE: `Current Subject(s)`,
