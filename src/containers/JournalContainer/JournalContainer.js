@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useState, useReducer } from 'react';
 import "./styles.scss";
 import JournalComponent from "../../components/JournalComponent";
 
@@ -23,7 +23,11 @@ const JournalContainer = () => {
         journalTextArea
     } = formData;
     const handleChange = (e) => {
-        setFormData({...formData, [e.target.id]: e.target.value})
+        setFormData({...formData, [e.target.id]: e.target.value});
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('firing');
     }
     return (
         <div className="JournalContainer">
@@ -34,7 +38,9 @@ const JournalContainer = () => {
                 mood={journalMood}
                 music={journalMusic}
                 entry={journalTextArea}
+                disabled={journalTextArea.length > 0 ? false : true}
                 handleChange={handleChange}
+                handleSubmit={handleSubmit}
             />
         </div>
     );

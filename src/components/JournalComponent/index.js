@@ -12,7 +12,9 @@ const JournalComponent = ({
     mood,
     music,
     entry,
-    handleChange
+    handleChange,
+    disabled,
+    handleSubmit
 }) => {
     return (
         <div className="journalComponent">
@@ -73,6 +75,14 @@ const JournalComponent = ({
                         onChange={(e) => handleChange(e)}
                         value={entry}
                         placeholder={content.ENTRY_LABEL}
+                    />
+                </div>
+                <div className="buttonContainer">
+                    <Button 
+                        className="journalFormSubmitButton"
+                        onClick={(e) => handleSubmit(e)}
+                        buttonText="SUBMIT"
+                        disabled={disabled}
                     />
                 </div>
             </div>
