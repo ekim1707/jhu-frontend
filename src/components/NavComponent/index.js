@@ -7,7 +7,7 @@ import Button from "../../common/Button";
 
 const NavComponent = () => {
     const liArray = content.NAV_DETAILS.map((li, i) => <li key={i}><span>{li.TITLE}:</span>&nbsp;{li.CONTENT}</li>);
-    const linksArray = content.NAV_LINKS.map(link => <NavLink exact to={link === "HOME" ? "/" : `/${link.toLowerCase()}`} className="navLinks">{link}</NavLink>);
+    const linksArray = content.NAV_LINKS.map((link, i) => <NavLink exact to={link === "HOME" ? "/" : `/${link.toLowerCase()}`} className="navLinks" key={i}>{link}</NavLink>);
     return (
         <div className="navComponent">
             <div className="navIconMainContainer"><Icon className="navIconMain" iconName="logo-main" /></div>

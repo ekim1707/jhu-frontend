@@ -27,7 +27,7 @@ const JournalComponent = ({
                         onChange={(e) => handleChange(e)}
                         value={title}
                     />
-                    <label for="journalTitle">{content.TITLE_LABEL}</label>
+                    <label htmlFor="journalTitle">{content.TITLE_LABEL}</label>
                 </div>
                 <div className="detailsInputContainer">
                     <div className="inputContainer">
@@ -37,7 +37,7 @@ const JournalComponent = ({
                             onChange={(e) => handleChange(e)}
                             value={timestamp}
                         />
-                        <label for="journalTimestamp">{content.TIMESTAMP_LABEL}</label>
+                        <label htmlFor="journalTimestamp">{content.TIMESTAMP_LABEL}</label>
                     </div>
                     <div className="inputContainer">
                         <Input 
@@ -45,8 +45,11 @@ const JournalComponent = ({
                             className="inputField"
                             onChange={(e) => handleChange(e)}
                             value={location}
+                            hasIcon
+                            iconPosition="right"
+                            iconName="location"
                         />
-                        <label for="journalLocation">{content.LOCATION_LABEL}</label>
+                        <label htmlFor="journalLocation">{content.LOCATION_LABEL}</label>
                     </div>
                     <div className="inputContainer">
                         <Input 
@@ -55,16 +58,18 @@ const JournalComponent = ({
                             onChange={(e) => handleChange(e)}
                             value={mood}
                         />
-                        <label for="journalMood">{content.MOOD_LABEL}</label>
+                        <label htmlFor="journalMood">{content.MOOD_LABEL}</label>
                     </div>
                     <div className="inputContainer">
                         <Input 
                             id="journalMusic"
                             className="inputField"
                             onChange={(e) => handleChange(e)}
-                            value={music}
+                            value={music}                            hasIcon
+                            iconPosition="right"
+                            iconName="musical_note"
                         />
-                        <label for="journalMusic">{content.MUSIC_LABEL}</label>
+                        <label htmlFor="journalMusic">{content.MUSIC_LABEL}</label>
                     </div>
                 </div>
                 <div className="journalTextAreaContainer">

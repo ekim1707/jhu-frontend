@@ -30,12 +30,11 @@ textarea::placeholder {
     margin: auto;
 }
 .submitButton {
-    width: 20em;
-    height: 3em;
-    margin-top: 5px;
-    background: $harvard-red;
+    width: 280px;
+    height: 40px;
+    background: $hopkins-dark-blue;
     color: $main-1;
-    font-size: $font-size-normal;
+    font-size: $font-size-medium;
     border: none;
     outline: none;
     letter-spacing: 1.4px;

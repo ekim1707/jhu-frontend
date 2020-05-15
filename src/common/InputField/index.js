@@ -22,9 +22,9 @@ const InputField = ({
       componentStyle = {
           ...componentStyle,
           background: `url('../../img/${iconName}.png') no-repeat`,
-          backgroundSize: "27px 27px",
-          backgroundPosition: "100% 50%",
-          paddingRight: "30px"
+          backgroundSize: "auto 16px",
+          backgroundPosition: "100% 10%",
+          paddingRight: "20px"
         }
         break;
       default: {

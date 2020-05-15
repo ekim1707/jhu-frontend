@@ -8,7 +8,7 @@
     }
     .journalFormContainer {
         position: relative;
-        padding: 20px;
+        padding: 20px 20px 10px 20px;
         background: $main-1;
         border: 8px solid $hopkins-dark-blue;
         border-radius: 10px;
@@ -16,14 +16,16 @@
         .inputField {
             display: flex;
             width: 100%;
-            margin-top: 20px;
+            margin-top: 25px;
             padding-bottom: 5px;
+            color: $gray;
             font-size: $font-size-medium;
             border-bottom: 2px solid $hopkins-dark-blue;
         }
         label {
             position: absolute;
             top: 20px;
+            font-size: $font-size-l;
         }
         .inputField:focus {
             border-color: $harvard-red;
@@ -49,6 +51,7 @@
                 width: 100%;
                 margin-top: 20px;
                 padding: 20px;
+                color: $gray;
                 font-size: $font-size-medium;
                 border: 2px solid $hopkins-dark-blue;
                 border-radius: 5px;
@@ -65,7 +68,10 @@
             }
         }
         .buttonContainer {
-            
+            .journalFormSubmitButton {
+                @extend .submitButton;
+                margin-top: 5px;
+            }
         }
     }
 }

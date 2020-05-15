@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import "./styles.scss";
 import JournalComponent from "../../components/JournalComponent";
 
@@ -7,7 +7,6 @@ const JournalContainer = () => {
         (state, newState) => ({ ...state, ...newState }),
         {
             journalTitle: "",
-            journalTimestamp: "",
             journalLocation: "",
             journalMood: "",
             journalMusic: "",
@@ -16,12 +15,18 @@ const JournalContainer = () => {
     );
     const {
         journalTitle,
-        journalTimestamp,
         journalLocation,
         journalMood,
         journalMusic,
         journalTextArea
     } = formData;
+    const timestamp = (new Date()).toLocaleDateString(
+        {},
+        {timeZone:"UTC", month:"long", day:"2-digit", year:"numeric"}
+    ) + " (" + (new Date()).toLocaleTimeString(
+        [], 
+        { hour: "2-digit", minute: "2-digit" }
+        ) + ")";
     const handleChange = (e) => {
         setFormData({...formData, [e.target.id]: e.target.value});
     }
@@ -33,7 +38,7 @@ const JournalContainer = () => {
         <div className="JournalContainer">
             <JournalComponent 
                 title={journalTitle}
-                timestampe={journalTimestamp}
+                timestamp={timestamp}
                 location={journalLocation}
                 mood={journalMood}
                 music={journalMusic}
