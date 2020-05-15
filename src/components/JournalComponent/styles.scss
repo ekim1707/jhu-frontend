@@ -22,6 +22,9 @@
             font-size: $font-size-medium;
             border-bottom: 2px solid $hopkins-dark-blue;
         }
+        .inputField:disabled {
+            cursor: not-allowed;
+        }
         label {
             position: absolute;
             top: 20px;

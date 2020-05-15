@@ -36,6 +36,7 @@ const JournalComponent = ({
                             className="inputField"
                             onChange={(e) => handleChange(e)}
                             value={timestamp}
+                            disabled={true}
                         />
                         <label htmlFor="journalTimestamp">{content.TIMESTAMP_LABEL}</label>
                     </div>
