@@ -1,0 +1,98 @@
+@import "../../scss/common.styles.scss";
+
+.loginComponent {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    .loginComponentLeft {
+        width: 50%;
+        height: 100%;
+        .loginComponentLeftRow {
+            width: 100%;
+            height: 30%;
+            background: $main-4;
+            border-right: 1px solid $main-2;
+        }
+        .loginComponentLeftRowMiddle {
+            @extend .loginComponentLeftRow;
+            display: flex;
+            height: 40%;
+            background: transparent;
+            .rowRectangle {
+                width: 70%;
+                background: $main-4;
+                border-right: 2px solid $main-2;
+            }
+            .rowHalfSquare {
+                width: 30%;
+                border-top: 2px solid $main-2;
+                border-bottom: 2px solid $main-2;
+            }
+        }
+    }
+    .loginComponentRight {
+        @extend .loginComponentLeft;
+        .loginComponentRightRow {
+            @extend .loginComponentLeftRow;
+            border-right: none;
+            border-left: 1px solid $main-2;
+        }
+        .loginComponentRightRowMiddle {
+            @extend .loginComponentLeftRowMiddle;
+            .rowHalfSquare {
+                position: relative;
+                .inputLoginContainer {
+                    position: absolute;
+                    width: calc(200% + 1px);
+                    height: 100%;
+                    right: 0;
+                    background: $main-1;
+                    .iconContainer {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 70%;
+                        .lockIcon {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                    .inputContainer {
+                        position: relative;
+                        padding: 25px 100px;
+                        .loginPasswordInput {
+                            width: 100%;
+                            font-size: $font-size-medium;
+                            border-bottom: 2px solid $main-2;
+                        }
+                        .passwordLabel {
+                            position: absolute;
+                            left: 100px;
+                            top: 0;
+                        }
+                        .welcomeLabel {
+                            @extend .passwordLabel;
+                            color: $cricket-green;
+                        }
+                        .loginPasswordInput:focus {
+                            border-bottom: 2px solid $harvard-red;
+                        }
+                        .loginPasswordInput:focus + .passwordLabel {
+                            color: $harvard-red;
+                        }
+                        .loginPasswordInput:focus + .welcomeLabel {
+                            color: $cricket-green;
+                        }
+                    }
+                }
+            }
+            .rowRectangle {
+                border-right: none;
+                border-left: 2px solid $main-2;
+            }
+        }
+    }
+}
