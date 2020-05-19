@@ -23,12 +23,12 @@
             .rowRectangle {
                 width: 70%;
                 background: $main-4;
-                border-right: 2px solid $main-2;
+                border-right: 1px solid $main-2;
             }
             .rowHalfSquare {
                 width: 30%;
-                border-top: 2px solid $main-2;
-                border-bottom: 2px solid $main-2;
+                border-top: 1px solid $main-2;
+                border-bottom: 1px solid $main-2;
             }
         }
     }
@@ -49,6 +49,7 @@
                     height: 100%;
                     right: 0;
                     background: $main-1;
+                    border: 1px solid $main-2;
                     .iconContainer {
                         display: flex;
                         justify-content: center;
@@ -91,7 +92,7 @@
             }
             .rowRectangle {
                 border-right: none;
-                border-left: 2px solid $main-2;
+                border-left: 1px solid $main-2;
             }
         }
     }

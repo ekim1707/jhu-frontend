@@ -10,7 +10,7 @@ const LoginComponent = ({
 }) => {
     return (
         <div className="loginComponent">
-            <div className="loginComponentLeft">
+            <div className="loginComponentLeft" style={password === "yes" ? { transform: "translateX(-130%)", transition: "1s" } : {}}>
                 <div className="loginComponentLeftRow"></div>
                 <div className="loginComponentLeftRowMiddle">
                     <div className="rowRectangle"></div>
@@ -18,7 +18,7 @@ const LoginComponent = ({
                 </div>
                 <div className="loginComponentLeftRow"></div>
             </div>
-            <div className="loginComponentRight">
+            <div className="loginComponentRight" style={password === "yes" ? { transform: "translateX(130%)", transition: "1s" } : {}}>
                 <div className="loginComponentRightRow"></div>
                 <div className="loginComponentRightRowMiddle">
                     <div className="rowHalfSquare">
