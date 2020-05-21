@@ -1,1 +1,36 @@
 @import "../../scss/common.styles.scss";
+
+.homeComponent {
+    .homeComponentMediaContainer {
+        .homeComponentRow {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            .iFrameContainer {
+                display: flex;
+                flex-flow: column nowrap;
+                label {
+                    margin: auto;
+                }
+            }
+            .iconContainer {
+                width: 100%;
+                padding-top: 20px;
+                text-align: center;
+                label {
+                    
+                }
+                .iconContainerRow {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    padding: 20px;
+                    .profileIcon {
+                        width: 500px;
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,10 +6,12 @@ import Input from "../../common/InputField";
 
 const LoginComponent = ({
     password,
+    isShowing,
     handleChangePassword
 }) => {
+    console.log(isShowing);
     return (
-        <div className="loginComponent">
+        <div className="loginComponent" style={isShowing ? {} : { display: "none" }}>
             <div className="loginComponentLeft" style={password === "yes" ? { transform: "translateX(-130%)", transition: "1s" } : {}}>
                 <div className="loginComponentLeftRow"></div>
                 <div className="loginComponentLeftRowMiddle">
