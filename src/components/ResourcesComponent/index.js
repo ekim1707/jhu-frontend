@@ -1,11 +1,27 @@
 import React from 'react';
 import "./styles.scss";
 import content from "./content";
+import Button from "../../common/Button";
 
-const ResourcesComponent = () => {
+const ResourcesComponent = ({
+    handleClick
+}) => {
     return (
         <div className="resourcesComponent">
-            Welcome Home
+            <div className="resourcesMediaContainer">
+                <ul className="resourcesButtonsContainer">
+                    {content.BUTTONS_ARRAY.map(button => 
+                        <Button 
+                            className="resourcesButtons active" 
+                            onClick={(e) => handleClick(e)}
+                            buttonText={button}
+                        />
+                    )}
+                </ul>
+                <div className="resourcesContentContainer">
+
+                </div>
+            </div>
         </div>
     );
 }

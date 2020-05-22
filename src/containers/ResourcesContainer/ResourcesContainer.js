@@ -3,9 +3,14 @@ import "./styles.scss";
 import ResourcesComponent from "../../components/ResourcesComponent";
 
 const ResourcesContainer = () => {
+    const handleClick = (e) => {
+        console.log(e.target.value);
+    }
     return (
         <div className="resourcesContainer">
-            <ResourcesComponent />
+            <ResourcesComponent 
+                handleClick={handleClick}
+            />
         </div>
     );
 }

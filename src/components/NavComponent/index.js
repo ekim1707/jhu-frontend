@@ -10,7 +10,7 @@ const NavComponent = () => {
     const linksArray = content.NAV_LINKS.map((link, i) => <NavLink exact to={link === "HOME" ? "/" : `/${link.toLowerCase()}`} className="navLinks" key={i}>{link}</NavLink>);
     return (
         <div className="navComponent">
-            <div className="navIconMainContainer"><Icon className="navIconMain" iconName="logo-main" /></div>
+            <div className="navIconMainContainer"><Icon className="navIconMain" iconName="logo_main" /></div>
             <div className="navContentContainer">
                 <ul className="navDetailsRow">
                     <li className="navTitle">{content.TITLE}</li>

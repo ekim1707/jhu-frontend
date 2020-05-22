@@ -1,11 +1,14 @@
 import React from 'react';
 import "./styles.scss";
 import content from "./content";
+import Icon from "../../common/Icon";
 
 const CalendarComponent = () => {
     return (
         <div className="calendarComponent">
-            Calendar in progress
+            <div className="calendarIconContainer">
+                <Icon className="calendarIcon" iconName="academic_calendar" />
+            </div>
         </div>
     );
 }
