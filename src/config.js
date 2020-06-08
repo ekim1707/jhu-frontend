@@ -1,4 +1,4 @@
-const api = "http://localhost:3000";
+const api = "http://localhost:3001";
 
 export const genericHeaders = () => ({
     "Content-Type": "application/json",

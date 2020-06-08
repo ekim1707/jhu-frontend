@@ -1,8 +1,9 @@
-import React, { useReducer } from 'react';
+import React, { useState, useReducer } from 'react';
 import "./styles.scss";
 import JournalComponent from "../../components/JournalComponent";
 
 const JournalContainer = () => {
+    const [isCreate, setIsCreate] = useState(true);
     const [formData, setFormData] = useReducer(
         (state, newState) => ({ ...state, ...newState }),
         {
@@ -37,6 +38,8 @@ const JournalContainer = () => {
     return (
         <div className="JournalContainer">
             <JournalComponent 
+                isCreate={isCreate}
+                setIsCreate={setIsCreate}
                 title={journalTitle}
                 timestamp={timestamp}
                 location={journalLocation}

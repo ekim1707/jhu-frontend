@@ -27,6 +27,7 @@
         transition: opacity .75s;
     }
     .sideNavLinks.active {
+        @extend .hoverable:hover;
         opacity: 1;
     }
 }

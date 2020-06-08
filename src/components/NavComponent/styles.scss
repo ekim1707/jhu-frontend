@@ -57,6 +57,7 @@
                 transition: opacity .75s;
             }
             .navLinks.active {
+                @extend .hoverable:hover;
                 opacity: 1;
             }
         }
