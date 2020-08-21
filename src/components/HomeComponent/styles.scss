@@ -2,33 +2,58 @@
 
 .homeComponent {
     .homeComponentMediaContainer {
+        .imageContainer {
+            position: relative;
+            cursor: pointer;
+            .imageBackground {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                left: 0;
+                top: 0;
+                background: rgba(0, 0, 0, 0.404);
+                img {
+                    box-shadow: $shadow-medium;
+                }
+            }
+        }
         .homeComponentRow {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-evenly;
-            .iFrameContainer {
+            .homeComponentCol {
                 display: flex;
                 flex-flow: column nowrap;
                 label {
                     margin: auto;
+                }
+                .iFrameContainer {
+                    position: relative;
+                    .toggleIconContainer {
+                        position: absolute;
+                        right: 0;
+                        margin: 5px;
+                        border-radius: 5px;
+                        border: 2px solid $main-2;
+                        background: $main-4;
+                        z-index: 1000;
+                        cursor: pointer;
+                        .toggleIcon {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
                 }
             }
             .iconContainer {
                 width: 100%;
                 padding-top: 20px;
                 text-align: center;
-                label {
-                    
-                }
                 .iconContainerRow {
                     display: flex;
                     justify-content: space-evenly;
                     width: 100%;
                     padding: 20px;
-                    .profileIcon {
-                        width: 500px;
-                        height: 300px;
-                    }
                 }
             }
         }

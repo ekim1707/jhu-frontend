@@ -7,11 +7,11 @@ export default {
         },
         {
             TITLE: `Semester Count`,
-            CONTENT: `1`
+            CONTENT: `break`
         },
         {
             TITLE: `Current Subject(s)`,
-            CONTENT: `Biochemistry`
+            CONTENT: `(None)`
         }
     ],
     NAV_LINKS: [
