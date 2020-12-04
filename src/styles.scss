@@ -27,13 +27,13 @@ ul {
 
 .bodyContainer {
     display: flex;
+    justify-content: stretch;
     height: calc(100vh - 140px)
 }
 
 .outerComponentContainer {
-    width: calc(100% - 140px);
+    flex-grow: 1;
     height: 100%;
     padding: 20px;
-    background: whitesmoke;
     overflow: scroll;
 }

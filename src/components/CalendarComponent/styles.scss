@@ -2,10 +2,12 @@
 
 .calendarComponent {
     .calendarIconContainer {
+        text-align: center;
         .calendarIcon {
-            width: 800px;
-            height: 600px;
-            margin: 40px auto;
+            width: 50%;
+            height: auto;
+            margin: 40px 0 0 0;
+            box-shadow: $shadow-medium;
         }
     }
 }

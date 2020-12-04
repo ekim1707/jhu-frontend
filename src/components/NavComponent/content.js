@@ -6,12 +6,16 @@ export default {
             CONTENT: `3/23/20`
         },
         {
-            TITLE: `Semester Count`,
-            CONTENT: `break`
+            TITLE: `Course Count`,
+            CONTENT: `2`
         },
         {
             TITLE: `Current Subject(s)`,
-            CONTENT: `(None)`
+            CONTENT: `Molecular Biology`
+        },
+        {
+            TITLE: `Running GPA`,
+            CONTENT: `3.7`
         }
     ],
     NAV_LINKS: [
